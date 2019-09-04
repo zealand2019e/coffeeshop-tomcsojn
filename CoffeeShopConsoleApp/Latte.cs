@@ -6,6 +6,10 @@ namespace CoffeeShopConsoleApp
 {
     class Latte:Coffee,Milk
     {
+        public Latte(int discount) : base(discount)
+        {
+        }
+
         public int mlMilk()
         {
             return 200;
