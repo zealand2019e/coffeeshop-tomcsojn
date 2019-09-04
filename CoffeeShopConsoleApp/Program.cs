@@ -17,6 +17,11 @@ namespace CoffeeShopConsoleApp
                 new Black_coffee(3)
 
             };
+            List<Milk> milks = new List<Milk>();
+            {
+                new Latte(2);
+                new Cortado(2);
+            }
 
 
             foreach (var coffee in orderList)
