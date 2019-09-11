@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShopConsoleApp
 {
-    class Flat_white : Coffee
+    public class Flat_white : Coffee
     {
         public Flat_white(int discount) : base(discount)
         {

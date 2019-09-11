@@ -16,10 +16,11 @@ namespace CoffeeShopConsoleApp
         /// <returns>20 dkr</returns>
         public virtual int price()
         {
-            return 20;
+            return 20-discount;
         }
         public abstract string Strength();
-        public int discount { get; set; }
+        int _disc;
+        public int discount { get {return _disc; } set { if (value > 5) throw new ArgumentException(); else _disc = value; } }
 
         protected Coffee(int discount)
         {

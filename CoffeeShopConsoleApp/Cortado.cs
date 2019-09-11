@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CoffeeShopConsoleApp
 {
-    class Cortado:Coffee,Milk
+    public class Cortado:Coffee,Milk
     {
         public Cortado(int discount) : base(discount)
         {
